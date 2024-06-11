@@ -11,8 +11,10 @@
     <div id="app">
         <h1>{{ message }}</h1>
 
-        <div v-for="row in board" :key="row">
-            <div v-for="cell in row" :key="cell" class="cell">{{ cell }}</div>
+        <div class="table">
+            <div v-for="(row, rowIndex) in board" :key="row" class="row">
+                <div v-for="cell in row" :key="cell" :class="makeClass(cell, rowIndex)"><div :class="cell"></div></div>
+            </div>
         </div>
     </div>
 

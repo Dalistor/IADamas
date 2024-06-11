@@ -11,9 +11,9 @@ body {
     text-align: center;
 }
 
-.cell {
-    width: 40px;
-    height: 40px;
+.table .row .cell {
+    width: 80px;
+    height: 80px;
     display: inline-block;
     line-height: 40px;
     text-align: center;
@@ -21,10 +21,27 @@ body {
     margin: -1px 0 0 -1px;
 }
 
-.cell:nth-child(even) {
-    background-color: #ddd;
+.table .row .green {
+    background-color: green;
 }
 
-.cell:nth-child(odd) {
-    background-color: #fff;
+.table .row .white {
+    background-color: white;
+}
+
+.P, .B {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    top: 25%;
+    left: 25%;
+}
+
+.P {
+    background-color: white;
+}
+
+.B {
+    background-color: black;
 }
